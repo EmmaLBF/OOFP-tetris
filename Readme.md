@@ -1,3 +1,10 @@
+The goals of this assignment are:
+
+- To practice using immutable data
+- To practice using higher-order functions map/filter and exists/forall
+- To practice using subclasses
+- To practice programming
+
 # Tetris
 
 In the second assignment, you will implement another classic computer game, namely
