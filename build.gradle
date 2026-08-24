@@ -26,11 +26,11 @@ repositories {
     }
 }
 
-
 sourceSets.main.scala.srcDirs = ['src']
 sourceSets.test.scala.srcDirs = ['test']
 
 dependencies {
+    implementation("org.scala-lang:scala3-compiler_3:${scalaVersion}")
     implementation("org.processing:core:4.4.4")
     implementation("org.jogamp.gluegen:gluegen-rt-main:2.5.0")
     // https://mvnrepository.com/artifact/org.jogamp.gluegen/gluegen-rt
@@ -90,4 +90,12 @@ task fraction3_2(type: JavaExec, dependsOn: classes) {
     classpath sourceSets.test.runtimeClasspath
     classpath sourceSets.main.runtimeClasspath
     //classpath configurations.runtime
+}
+
+task scalaRepl(type: JavaExec, dependsOn: classes) {
+    group = "scala"
+    mainClass = "dotty.tools.MainGenericRunner"
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    args("-usejavacp")
 }
