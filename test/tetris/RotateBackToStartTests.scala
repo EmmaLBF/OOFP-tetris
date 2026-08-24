@@ -6,7 +6,7 @@ class RotateBackToStartTests extends TetrisTestSuiteBase {
   // back to the original position
 
 
-  test("testRotate360") {
+  weightedTest("testRotate360") {
     checkGame(    List(
       TestFrame(0,
         """....
@@ -21,7 +21,7 @@ class RotateBackToStartTests extends TetrisTestSuiteBase {
     ), hint = "Rotating clockwise 4 times  gives the initial orientation.")
   }
 
-  test("testRotate360CC") {
+  weightedTest("testRotate360CC") {
     checkGame(       List(
       TestFrame(5,
         """.T.
@@ -34,7 +34,7 @@ class RotateBackToStartTests extends TetrisTestSuiteBase {
     ), hint = "Rotating counter-clockwise 4 times  gives the initial orientation.")
   }
 
-  test("testRotateLeftRight") {
+  weightedTest("testRotateLeftRight") {
     checkGame(   List(
       TestFrame(6,
         """ZZ.
@@ -51,7 +51,7 @@ class RotateBackToStartTests extends TetrisTestSuiteBase {
     ), hint = "Rotating right and then left gives the original orientation.")
   }
 
-  test("testRotateRightLeft") {
+  weightedTest("testRotateRightLeft") {
     checkGame( List(
       TestFrame(2,
         """..L

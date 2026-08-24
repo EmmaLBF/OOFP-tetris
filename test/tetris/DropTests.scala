@@ -2,7 +2,7 @@ package tetris
 
 class DropTests extends TetrisTestSuiteBase {
 
-  test("testDrop") {
+  weightedTest("testDrop") {
     checkGame( initialBoard =
       """....
         |....

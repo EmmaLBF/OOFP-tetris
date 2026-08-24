@@ -2,7 +2,7 @@ package tetris
 
 class GameOverTests extends TetrisTestSuiteBase {
 
-  test("testGameOver") {
+  weightedTest("testGameOver") {
     checkGame(List(TestFrame(2,
       """..L.
         |LLL.
@@ -27,7 +27,7 @@ class GameOverTests extends TetrisTestSuiteBase {
       , "The game is over if the blocks of a newly spawned tetromino are already occupied")
   }
 
-  test("testNoEscapeGameOver") {
+  weightedTest("testNoEscapeGameOver") {
     checkGame( List(TestFrame(1,
       """J...
         |JJJ.
@@ -43,7 +43,7 @@ class GameOverTests extends TetrisTestSuiteBase {
       , "You cannot escape from a game over state by moving or rotating blocks.")
   }
 
-  test("testNoEscapeGameOver2") {
+  weightedTest("testNoEscapeGameOver2") {
     checkGame( List(TestFrame(1,
       """J...
         |JJJ.
@@ -69,7 +69,7 @@ class GameOverTests extends TetrisTestSuiteBase {
       , "You cannot escape from a game over state by moving or rotating blocks.")
   }
 
-  test("testNoGameOverTightFit") {
+  weightedTest("testNoGameOverTightFit") {
     checkGame(initialBoard =
       """I..I
         |I..I
