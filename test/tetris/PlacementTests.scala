@@ -2,7 +2,7 @@ package tetris
 
 class PlacementTests extends TetrisTestSuiteBase {
 
-  weightedTest("testPlacementI") {
+  test("testPlacementI") {
     checkGame(List(TestFrame(0,
       """.......
         |..IIII.
@@ -10,7 +10,7 @@ class PlacementTests extends TetrisTestSuiteBase {
         |.......""")), hint = "See Readme.md for how to place tetrominos")
   }
 
-  weightedTest("testPlacementIEven") {
+  test("testPlacementIEven") {
     checkGame( List(
       TestFrame(0,
         """......
@@ -21,7 +21,7 @@ class PlacementTests extends TetrisTestSuiteBase {
   }
 
 
-  weightedTest("testPlacementJ") {
+  test("testPlacementJ") {
     checkGame( List(
       TestFrame(1,
         """..J....
@@ -30,7 +30,7 @@ class PlacementTests extends TetrisTestSuiteBase {
     ), hint = "See Readme.md for how to place tetrominos")
   }
 
-  weightedTest("testPlacementL") {
+  test("testPlacementL") {
     checkGame( List(
       TestFrame(2,
         """...L..
@@ -39,7 +39,7 @@ class PlacementTests extends TetrisTestSuiteBase {
     ), hint = "See Readme.md for how to place tetrominos")
   }
 
-  weightedTest("testPlacementO") {
+  test("testPlacementO") {
     checkGame( List(
       TestFrame(3,
         """...OO..
@@ -48,7 +48,7 @@ class PlacementTests extends TetrisTestSuiteBase {
     ), hint = "See Readme.md for how to place tetrominos")
   }
 
-  weightedTest("testPlacementOEven") {
+  test("testPlacementOEven") {
     checkGame( List(
       TestFrame(3,
         """..OO..
@@ -57,7 +57,7 @@ class PlacementTests extends TetrisTestSuiteBase {
     ), hint = "See Readme.md for how to place tetrominos")
   }
 
-  weightedTest("testPlacementS") {
+  test("testPlacementS") {
     checkGame(  List(
       TestFrame(4,
         """..SS.
@@ -66,7 +66,7 @@ class PlacementTests extends TetrisTestSuiteBase {
     ), hint = "See ReadMe.md for how to place tetrominos")
   }
 
-  weightedTest("testPlacementT") {
+  test("testPlacementT") {
     checkGame(   List(
       TestFrame(5,
         """...T....
@@ -75,7 +75,7 @@ class PlacementTests extends TetrisTestSuiteBase {
     ), hint = "See ReadMe.md for how to place tetrominos")
   }
 
-  weightedTest("testPlacementZ") {
+  test("testPlacementZ") {
     checkGame(  List(
       TestFrame(6,
         """.ZZ...

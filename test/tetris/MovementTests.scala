@@ -2,7 +2,7 @@ package tetris
 
 class MovementTests extends TetrisTestSuiteBase {
 
-  weightedTest("testMovement") {
+  test("testMovement") {
     checkGame( List(TestFrame(4,
       """..SS..
         |.SS...
@@ -71,7 +71,7 @@ class MovementTests extends TetrisTestSuiteBase {
     ,hint = "Moving left, right and down should work as expected")
   }
 
-  weightedTest("testMovement2") {
+  test("testMovement2") {
     checkGame( List(TestFrame(5,
       """...T...
         |..TTT..

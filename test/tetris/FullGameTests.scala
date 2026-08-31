@@ -5736,24 +5736,24 @@ class FullGameTests extends TetrisTestSuiteBase {
         |TSSJJ."""),
     TestFrame(5, List(Down), GameOverDisplay()))
 
-  weightedTest("testGame5x9") {
+  test("testGame5x9") {
     checkGame(game5x9)
   }
 
-  weightedTest("testGame8x11") {
+  test("testGame8x11") {
     checkGame(game8x11)
   }
 
-  weightedTest("testGame6x10") {
+  test("testGame6x10") {
     checkGame(game6x10)
   }
 
-  weightedTest("testInterleave5x9and8x11") {
+  test("testInterleave5x9and8x11") {
     checkInterleave(game5x9,game8x11)
   }
 
 
-  weightedTest("testInterleave8x11and6x10") {
+  test("testInterleave8x11and6x10") {
     checkInterleave(game8x11,game6x10)
   }
 }

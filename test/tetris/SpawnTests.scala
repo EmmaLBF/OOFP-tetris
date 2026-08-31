@@ -2,7 +2,7 @@ package tetris
 
 class SpawnTests extends TetrisTestSuiteBase {
 
-  weightedTest("testSpawn") {
+  test("testSpawn") {
     checkGame(List(TestFrame(0,
       """.....
         |.IIII
@@ -37,7 +37,7 @@ class SpawnTests extends TetrisTestSuiteBase {
   }
 
 
-  weightedTest("testSpawn2") {
+  test("testSpawn2") {
     checkGame( List(TestFrame(1,
       """J...
         |JJJ.

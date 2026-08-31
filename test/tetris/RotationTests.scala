@@ -2,7 +2,7 @@ package tetris
 
 class RotationTests extends TetrisTestSuiteBase {
 
-  weightedTest("testIRotations") {
+  test("testIRotations") {
     checkGame( List(
       TestFrame(0,
         """....
@@ -26,7 +26,7 @@ class RotationTests extends TetrisTestSuiteBase {
           |.I..""")), hint = "Check Readme.md for how pieces should rotate")
   }
 
-  weightedTest("testJRotations") {
+  test("testJRotations") {
     checkGame( List(
       TestFrame(1,
         """J..
@@ -47,7 +47,7 @@ class RotationTests extends TetrisTestSuiteBase {
     ), hint = "Check Readme.md for how pieces should rotate")
   }
 
-  weightedTest("testLRotations") {
+  test("testLRotations") {
     checkGame( List(
       TestFrame(2,
         """..L
@@ -68,7 +68,7 @@ class RotationTests extends TetrisTestSuiteBase {
     ), hint = "Check Readme.md for how pieces should rotate")
   }
 
-  weightedTest("testORotations") {
+  test("testORotations") {
     checkGame(     List(
       TestFrame(3,
         """...OO..
@@ -89,7 +89,7 @@ class RotationTests extends TetrisTestSuiteBase {
     ), hint = "Check Readme.md for how pieces should rotate")
   }
 
-  weightedTest("testSRotations") {
+  test("testSRotations") {
     checkGame(     List(
       TestFrame(4,
         """.SS
@@ -110,7 +110,7 @@ class RotationTests extends TetrisTestSuiteBase {
     ), hint = "Check Readme.md for how pieces should rotate")
   }
 
-  weightedTest("testTRotations") {
+  test("testTRotations") {
     checkGame(     List(
       TestFrame(5,
         """.T.
@@ -131,7 +131,7 @@ class RotationTests extends TetrisTestSuiteBase {
     ), hint = "Check Readme.md for how pieces should rotate")
   }
 
-  weightedTest("testZRotations") {
+  test("testZRotations") {
     checkGame(   List(
       TestFrame(6,
         """ZZ.

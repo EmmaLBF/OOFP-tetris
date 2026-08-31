@@ -3,7 +3,7 @@ package tetris
 class BlockedTests extends TetrisTestSuiteBase {
 
 
-  weightedTest("testMoveOutLeft") {
+  test("testMoveOutLeft") {
     checkGame( List(TestFrame(5,
       """...T...
         |..TTT..
@@ -27,7 +27,7 @@ class BlockedTests extends TetrisTestSuiteBase {
       hint = "Trying to move out of the screen on the left side has no effect")
   }
 
-  weightedTest("testMoveOutRight") {
+  test("testMoveOutRight") {
     checkGame( List(TestFrame(2,
       """...L..
         |.LLL..
@@ -47,7 +47,7 @@ class BlockedTests extends TetrisTestSuiteBase {
       hint = "Trying to move out of the screen on the right side has no effect")
   }
 
-  weightedTest("testBlockedByBlocksLeft") {
+  test("testBlockedByBlocksLeft") {
     checkGame(initialBoard =
       """O.....
         |O.....
@@ -64,7 +64,7 @@ class BlockedTests extends TetrisTestSuiteBase {
   }
 
 
-  weightedTest("testBlockedByBlocksRight") {
+  test("testBlockedByBlocksRight") {
     checkGame(initialBoard =
       """.....J
         |......
@@ -84,7 +84,7 @@ class BlockedTests extends TetrisTestSuiteBase {
       hint = "The current tetromino cannot move into existing blocks—instead, the movement is ignored.")
   }
 
-  weightedTest("testBlockedByBlocksRotateLeft") {
+  test("testBlockedByBlocksRotateLeft") {
     checkGame(initialBoard =
       """...
         |...
@@ -101,7 +101,7 @@ class BlockedTests extends TetrisTestSuiteBase {
   }
 
 
-  weightedTest("testBlockedByBlocksRotateRight") {
+  test("testBlockedByBlocksRotateRight") {
     checkGame(initialBoard =
       """...O..
         |......
@@ -130,7 +130,7 @@ class BlockedTests extends TetrisTestSuiteBase {
       hint = "The current tetromino cannot rotate into existing blocks –– instead, the rotation is ignored.")
   }
 
-  weightedTest("testRotateLeftOutRight") {
+  test("testRotateLeftOutRight") {
     checkGame(initialBoard =
       """...
         |...
@@ -155,7 +155,7 @@ class BlockedTests extends TetrisTestSuiteBase {
       hint = "Trying to rotate out of the screen on the right side has no effect")
   }
 
-  weightedTest("testRotateRightOutRight") {
+  test("testRotateRightOutRight") {
     checkGame(initialBoard =
       """...
         |...
@@ -180,7 +180,7 @@ class BlockedTests extends TetrisTestSuiteBase {
       hint = "Trying to rotate out of the screen on the right side has no effect/")
   }
 
-  weightedTest("testRotateLeftOutLeft") {
+  test("testRotateLeftOutLeft") {
     checkGame(initialBoard =
       """....
         |....
@@ -210,7 +210,7 @@ class BlockedTests extends TetrisTestSuiteBase {
       hint = "Trying to rotate out of the screen on the left side has no effect")
   }
 
-  weightedTest("testRotateRightOutLeft") {
+  test("testRotateRightOutLeft") {
     checkGame(initialBoard =
       """...
         |...
@@ -235,7 +235,7 @@ class BlockedTests extends TetrisTestSuiteBase {
       hint = "Trying to rotate out of the screen on the right side has no effect")
   }
 
-  weightedTest("testRotateOutBottom") {
+  test("testRotateOutBottom") {
     checkGame(initialBoard =
       """....
         |....""",

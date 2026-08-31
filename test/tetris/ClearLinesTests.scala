@@ -2,7 +2,7 @@ package tetris
 
 class ClearLinesTests extends TetrisTestSuiteBase {
 
-  weightedTest("testClear1Line") {
+  test("testClear1Line") {
     checkGame(initialBoard =
       """...
         |...
@@ -43,7 +43,7 @@ class ClearLinesTests extends TetrisTestSuiteBase {
     )
   }
 
-  weightedTest("testClear1LineMiddle") {
+  test("testClear1LineMiddle") {
     checkGame(initialBoard =
       """....
         |....
@@ -148,7 +148,7 @@ class ClearLinesTests extends TetrisTestSuiteBase {
     )
   }
 
-  weightedTest("testClear2Lines") {
+  test("testClear2Lines") {
     checkGame(initialBoard =
       """....
         |....
@@ -234,7 +234,7 @@ class ClearLinesTests extends TetrisTestSuiteBase {
     )
   }
 
-  weightedTest("testClear3Lines") {
+  test("testClear3Lines") {
     checkGame(initialBoard =
       """....
         |....
@@ -321,7 +321,7 @@ class ClearLinesTests extends TetrisTestSuiteBase {
   }
 
 
-  weightedTest("testClear4Lines") {
+  test("testClear4Lines") {
     checkGame(initialBoard =
       """....
         |....
